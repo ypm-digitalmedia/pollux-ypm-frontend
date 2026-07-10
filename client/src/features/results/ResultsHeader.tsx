@@ -11,13 +11,16 @@ import useResizeableWindow from '../../lib/hooks/useResizeableWindow'
 import StyledResultsHeader from '../../styles/features/results/ResultsHeader'
 import StyledHr from '../../styles/shared/Hr'
 import { pushClientEvent } from '../../lib/pushClientEvent'
-import { OverlayKey } from '../../config/cms'
 import { getParamPrefix } from '../../lib/util/params'
 import EntityResultsDescription from '../cms/EntityResultsDescription'
 import { ResultsTab } from '../../types/ResultsTab'
 import LuxOverlay from '../common/LuxOverlay'
 import MobileSelectedFacets from '../facets/MobileSelectedFacets'
-import { searchScope } from '../../config/searchTypes'
+import {
+  advancedSearchTitles,
+  resultsHeaderOverlays,
+  searchScope,
+} from '../../config/searchTypes'
 import { useWindowWidth } from '../../lib/hooks/useWindowWidth'
 import CreateCollectionButton from '../myCollections/CreateCollectionButton'
 import AddToCollectionButton from '../myCollections/AddToCollectionButton'
@@ -60,16 +63,12 @@ const StyledDiv = styled.div`
 
 interface IResultsHeader {
   total: number
-  label: string
-  overlay: OverlayKey
   resultsData?: ISearchResults
   toggleView?: boolean
 }
 
 const ResultsHeader: React.FC<IResultsHeader> = ({
   total,
-  label,
-  overlay,
   resultsData,
   toggleView = false,
 }) => {
@@ -82,6 +81,8 @@ const ResultsHeader: React.FC<IResultsHeader> = ({
   const { tab, subTab } = useParams<keyof ResultsTab>() as ResultsTab
   const paramPrefix = getParamPrefix(tab)
   const queryString = new URLSearchParams(search)
+  const label = advancedSearchTitles[tab] || ''
+  const overlay = resultsHeaderOverlays[tab]
 
   // Is the user authenticated
   const auth = useAuth()

@@ -77,9 +77,9 @@ const WorksResults: React.FC<IProps> = ({ searchResponse, isMobile }) => {
           <ResultsHeader
             key={sort}
             total={estimate}
-            label="Works"
-            overlay="works"
-            resultsData={data}            toggleView={true}          />
+            resultsData={data}
+            toggleView={true}
+          />
         </Col>
       )}
       <Col xs={12}>
