@@ -77,8 +77,6 @@ const PersonResults: React.FC<IProps> = ({ searchResponse, isMobile }) => {
           <ResultsHeader
             key={sort}
             total={estimate}
-            label="People & Groups"
-            overlay="peopleAndOrgs"
             resultsData={data}
           />
         </Col>

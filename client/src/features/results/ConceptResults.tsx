@@ -76,8 +76,6 @@ const ConceptResults: React.FC<IProps> = ({ searchResponse, isMobile }) => {
           <ResultsHeader
             key={sort}
             total={data ? estimate : 0}
-            label="Concepts"
-            overlay="conceptsAndGroupings"
             resultsData={data}
           />
         </Col>

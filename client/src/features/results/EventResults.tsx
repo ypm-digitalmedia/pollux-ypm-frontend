@@ -79,8 +79,6 @@ const EventResults: React.FC<IProps> = ({ searchResponse, isMobile }) => {
           <ResultsHeader
             key={sort}
             total={estimate}
-            label="Events"
-            overlay="events"
             resultsData={data}
           />
         </Col>

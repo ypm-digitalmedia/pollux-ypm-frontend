@@ -37,3 +37,5 @@ package-lock.json
 
 /scripts
 *.orig
+.eslintcache
+/src/lib/pushClientEvent.ts
