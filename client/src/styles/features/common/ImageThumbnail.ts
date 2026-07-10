@@ -23,6 +23,15 @@ const ImageThumbnail = styled.div`
     margin-right: auto;
     border: none;
     padding: 0;
+    display: block;
+    overflow-y: hidden;
+    color: white;
+  }
+
+  a.image-link:focus,
+  a.image-link:hover,
+  a.image-link:active {
+    text-decoration: underline white solid!important;
   }
 
   button {

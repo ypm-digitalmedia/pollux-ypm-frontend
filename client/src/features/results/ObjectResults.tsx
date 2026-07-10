@@ -2,6 +2,7 @@
 import React from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import { Col, Row } from 'react-bootstrap'
+import InternalLink from '../common/InternalLink' 
 
 import { IOrderedItems } from '../../types/ISearchResults'
 import FacetContainer from '../facets/FacetContainer'
@@ -122,6 +123,7 @@ const ObjectResults: React.FC<IProps> = ({ searchResponse, isMobile }) => {
               !isLoading &&
               (isError ||
                 (isSuccess && data && data.orderedItems.length === 0)) && (
+                <React.Fragment>
                 <NoResultsAlert
                   message={errorMessage}
                   variant={
@@ -130,6 +132,16 @@ const ObjectResults: React.FC<IProps> = ({ searchResponse, isMobile }) => {
                       : 'warning'
                   }
                 />
+                <div className="alert alert-secondary">
+                  For tips on searching by catalog number or identifier,{' '}
+                  <InternalLink
+                    uri="/content/simple-search"
+                    name="click here"
+                    linkCategory="Catalog number search"
+                  />
+                  {'.'}
+                </div>
+              </React.Fragment>
               )}
             {(isFetching || isLoading) && <PageLoading />}
           </Col>

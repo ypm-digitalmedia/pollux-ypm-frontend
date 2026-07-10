@@ -47,6 +47,7 @@ const ImageThumbnail: React.FC<IProps> = ({ imageInfo, linkUrl, name }) => {
             pushClientEvent('Entity Link', 'Selected', 'Results Snippet Link')
           }
           data-testid="image-link"
+          className="image-link"
         >
           <img
             key={imageInfo.imageUrls[0]}
