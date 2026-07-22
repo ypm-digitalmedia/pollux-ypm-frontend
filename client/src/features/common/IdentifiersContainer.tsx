@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap'
 
 import StyledDataRow from '../../styles/shared/DataRow'
 import StyledHr from '../../styles/shared/Hr'
-import StyledTextLabel from 'src/styles/features/common/TextLabel'
+import StyledTextLabel from '../../styles/features/common/TextLabel'
 
 import IdentifiersList from './IdentifiersList'
 

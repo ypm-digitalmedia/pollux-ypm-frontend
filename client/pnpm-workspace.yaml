@@ -1,0 +1,7 @@
+allowBuilds:
+  canvas: true
+  es5-ext: true
+  esbuild: true
+  unrs-resolver: true
+nodeVersion: '22.21.0'
+saveExact: true

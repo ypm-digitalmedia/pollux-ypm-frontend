@@ -11,7 +11,7 @@ import {
 import { IFacetsPagination } from '../../types/IFacets'
 import { IOrderedItems } from '../../types/ISearchResults'
 import theme from '../../styles/theme'
-import PrimaryButton from 'src/styles/shared/PrimaryButton'
+import PrimaryButton from '../../styles/shared/PrimaryButton'
 import useResizeableWindow from '../../lib/hooks/useResizeableWindow'
 
 import ListItem from './ListItem'

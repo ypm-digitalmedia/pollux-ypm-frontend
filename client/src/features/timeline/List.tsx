@@ -11,7 +11,7 @@ import {
   ITimelineCriteria,
   ITimelinesTransformed,
 } from '../../types/ITimelines'
-import PrimaryButton from 'src/styles/shared/PrimaryButton'
+import PrimaryButton from '../../styles/shared/PrimaryButton'
 import { IHalLinks } from '../../types/IHalLinks'
 
 import ListRow from './ListRow'

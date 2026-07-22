@@ -24,7 +24,7 @@ import IObject from '../../types/data/IObject'
 import IDigitalObject from '../../types/data/IDigitalObject'
 import UV from '../common/UV'
 import WikiDataImageViewer from '../common/WikiDataImageViewer'
-import ImageryMultiContainer from '../common/ImageryMultiContainer'
+// import ImageryMultiContainer from '../common/ImageryMultiContainer'
 import IEntity from '../../types/data/IEntity'
 
 import Carries from './Carries'
