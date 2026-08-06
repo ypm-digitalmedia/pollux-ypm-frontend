@@ -38,7 +38,7 @@ const ObjectsPage: React.FC<{ data: IObject | IDigitalObject }> = ({
   const concept = new ConceptParser(data)
   const personUri = element.getAgentFromProductionEvent() || undefined
   const memberOf = element.getMemberOf()
-  const objectsWithImagesHalLink = element.getHalLink(archive.searchTag)
+  const objectsWithImagesHalLink = element.getHalLink(archive.halLinkName)
   const halLinkTitle = archive.title
   const manifestId = element.getManifestId()  // original IIIF manifest from LUX (2D imagery)
   
