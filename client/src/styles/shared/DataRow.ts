@@ -24,6 +24,14 @@ const DataRow = styled.div`
     margin-top: -1rem;
   }
 
+  .noteContent div::before {
+    font-family: 'bootstrap-icons';
+    content: '\\f341';
+    margin-right: 0.25rem;
+    font-size: 1rem;
+    
+  }
+
   .concepts-list dd a::before {
     font-family: 'bootstrap-icons';
     content: '\\f46b';

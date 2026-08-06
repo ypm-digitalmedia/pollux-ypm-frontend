@@ -12,26 +12,17 @@ const InfoPopover: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)
 
   const getButtonText = (): string =>
-    isOpen ? 'Hide access details' : 'Learn more about access options'
+    isOpen ? 'Hide access details' : 'Learn more'
 
   const popover = (
     <Popover
       id="popover-basic"
-      style={{ maxWidth: '300px' }}
+      style={{ maxWidth: '300px', fontFamily: 'Mallory MP Book', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}
       title="Access details popover"
     >
       <Popover.Header as="h3">Access Details</Popover.Header>
       <Popover.Body>
         <Row>
-          <Col xs={12}>
-            <strong>For Library & Archival Materials:</strong>
-          </Col>
-          <Col xs={12}>
-            <ul className="ms-4">
-              <li>View access information and request items</li>
-              <li>Check holdings and location details</li>
-            </ul>
-          </Col>
           <Col xs={12}>
             <strong>For Museum Collections:</strong>
           </Col>
@@ -41,10 +32,19 @@ const InfoPopover: React.FC = () => {
               <li>Access digital records and viewing options</li>
             </ul>
           </Col>
+          <Col xs={12}>
+            <strong>For Library & Archival Materials:</strong>
+          </Col>
+          <Col xs={12}>
+            <ul className="ms-4">
+              <li>View access information and request items</li>
+              <li>Check holdings and location details</li>
+            </ul>
+          </Col>
         </Row>
         <StyledHr />
         <p className="mt-2 mb-0">
-          <i>Need help? Contact the appropriate library or museum directly.</i>
+          <i>Need help? Contact the <a href="https://peabody.yale.edu/explore/collections" target="_blank">appropriate collections manager.</a></i>
         </p>
       </Popover.Body>
     </Popover>

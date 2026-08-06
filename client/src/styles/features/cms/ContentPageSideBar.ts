@@ -40,7 +40,7 @@ const ContentPageSideBar = styled.div`
     }
 
     &.active {
-      background-color: ${theme.color.primary.blue};
+      background-color: ${theme.color.primary.blue}!important;
       color: ${theme.color.white};
     }
   }
