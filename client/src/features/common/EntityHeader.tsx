@@ -109,8 +109,6 @@ const EntityHeader: React.FC<IEntityHeader> = ({
   const { displayName, isNameLong, showLongName, setShowLongName } =
     useResizableName(name)
 
-  useTitle(shortenIfNeeded(displayName))
-
   useEffect(() => {
     if (state && state.hasOwnProperty('showAlert')) {
       setAlert(state as IRouteState)

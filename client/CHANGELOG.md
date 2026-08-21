@@ -2,7 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
-## v1.75.0 - Unreleased
+## v1.76.2 - 2026-08-19
+
+### Fixed
+
+- Fixed styling of Show all/Show less button ([#634](https://github.com/project-lux/lux-frontend/issues/634)).
+
+## v1.76.1 - 2026-08-18
+
+### Fixed
+
+- Fixed SiteImprove page title tracking logic issue ([#1023](https://github.com/project-lux/lux-frontend/issues/1023)).
+
+## v1.76.0 - 2026-08-17
+
+### Added
+
+- Added support for Show More/Show Less on notes sections ([#634](https://github.com/project-lux/lux-frontend/issues/634)).
+
+### Changed
+
+- Changed styling and layout of search buttons on entity pages ([#845](https://github.com/project-lux/lux-frontend/issues/845)).
+
+### Fixed
+
+- Fixed the timeline legend overlapping the slider ([#881](https://github.com/project-lux/lux-frontend/issues/881)).
+
+### Removed
+
+- Removed hash links and react-router-hash-link ([#1002](https://github.com/project-lux/lux-frontend/issues/1002)).
+- Removed SiteImprove events on errors ([#937](https://github.com/project-lux/lux-frontend/issues/937)).
+
+## v1.75.0 - 2026-08-03
 
 ### Added
 

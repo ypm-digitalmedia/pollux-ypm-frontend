@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import { LinksContainerRow } from '../../styles/features/search/LinksContainerRow'
 import theme from '../../styles/theme'
