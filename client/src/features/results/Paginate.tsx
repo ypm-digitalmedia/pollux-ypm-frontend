@@ -37,6 +37,7 @@ const StyledPagination = styled(Pagination)`
     background-color: ${theme.color.primary.blue};
     border-color: ${theme.color.primary.blue};
     font-weight: 700;
+    border-radius: 0px!important;
   }
 
   li > a:hover {
@@ -173,12 +174,14 @@ const Paginate: React.FC<IPagination> = ({
               <Pagination.Prev
                 disabled={currentPage === 1}
                 onClick={() => handlePageSelection(currentPage - 1)}
+                className={"rounded-0"}
               >
                 Previous
               </Pagination.Prev>
               <Pagination.Next
                 disabled={currentPage === lastPage}
                 onClick={() => handlePageSelection(currentPage + 1)}
+                className={"rounded-0"}
               >
                 Next
               </Pagination.Next>
@@ -188,12 +191,14 @@ const Paginate: React.FC<IPagination> = ({
               <Pagination.First
                 active={currentPage === 1}
                 onClick={() => handlePageSelection(1)}
+                className={"rounded-0"}
               >
                 First
               </Pagination.First>
               {currentPage !== 1 && (
                 <Pagination.Prev
                   onClick={() => handlePageSelection(currentPage - 1)}
+                  className={"rounded-0"}
                 />
               )}
               {paginationRange.length > 0 &&
@@ -214,11 +219,13 @@ const Paginate: React.FC<IPagination> = ({
               {currentPage !== lastPage && (
                 <Pagination.Next
                   onClick={() => handlePageSelection(currentPage + 1)}
+                  className={"rounded-0"}
                 />
               )}
               <Pagination.Last
                 active={currentPage === lastPage}
                 onClick={() => handlePageSelection(lastPage)}
+                className={"rounded-0"}
               >
                 Last
               </Pagination.Last>

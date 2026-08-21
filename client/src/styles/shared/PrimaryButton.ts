@@ -74,6 +74,7 @@ const PrimaryButton = styled(Button)`
     }
   }
 
+<<<<<<< HEAD
   &.objectsContainerSearchLink {
     background-color: ${theme.color.white};
     color: ${theme.color.primary.blue};
@@ -97,6 +98,8 @@ const PrimaryButton = styled(Button)`
     border-color: ${theme.color.primary.darkBlue};
   }
 
+=======
+>>>>>>> ea7e054ee0f0208cd836903e8f5734c3ed2a56d7
   &.addToCollectionOnEntityPageButton {
     background-color: ${theme.color.lightGray};
     color: ${theme.color.black};
