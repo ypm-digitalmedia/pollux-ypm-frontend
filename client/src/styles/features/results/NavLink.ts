@@ -125,20 +125,6 @@ const StyledNavLink = styled(NavLink)`
   @media (min-width: 1469px) {
     font-size: 1.25em;
   }
-
-  &.myCollectionsNavLink {
-    color: ${theme.color.trueBlack};
-    font-size: 1.25rem;
-
-    &.nav-link.active {
-      color: ${theme.color.primary.blue};
-      border-bottom-color: ${theme.color.primary.blue};
-    }
-
-    &.nav-link:not(.active) > div > div > span.badge {
-      background-color: ${theme.color.gray};
-    }
-  }
 `
 
 export default StyledNavLink
