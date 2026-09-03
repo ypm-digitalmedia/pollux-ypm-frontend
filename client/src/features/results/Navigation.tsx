@@ -175,7 +175,7 @@ const Navigation: React.FC<INavigation> = ({
                       ? `${urlParams.toString()}&qt=${tab}`
                       : urlParams.toString()
                   }`}
-                  className={getClassNameOfNavLink(key)}
+                  className={`advancedSearchNav ${getClassNameOfNavLink(key)}`}
                   onClick={() => {
                     pushClientEvent(
                       'Results Tab',

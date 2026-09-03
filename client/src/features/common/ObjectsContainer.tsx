@@ -141,7 +141,7 @@ const ObjectsContainer: React.FC<IObjectsBy> = ({ uri, tab, title, user }) => {
             <Col xs={12}>
               <PrimaryButton
                 variant="link"
-                className="searchResultLink"
+                className="primaryButton rounded-0"
                 href={`/view/results/${tab}?${formatHalLink(
                   uri,
                   searchScope[tab],

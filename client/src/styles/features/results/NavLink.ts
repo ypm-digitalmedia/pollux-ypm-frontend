@@ -48,10 +48,10 @@ const StyledNavLink = styled(NavLink)`
 
   &.active {
     box-shadow:
-      -8px 0px 8px -6px ${theme.color.black20},
-      5px 0px 8px -6px ${theme.color.black20},
-      0px -5px 8px -6px ${theme.color.black20};
-    background: none!important;
+      -4px 0px 8px -6px ${theme.color.black20},
+      4px 0px 8px -6px ${theme.color.black20},
+     0px -2px 8px -6px ${theme.color.black20};
+    background: white!important;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     margin-bottom: 0px;
@@ -74,10 +74,10 @@ const StyledNavLink = styled(NavLink)`
     }
 
     &#objects {
-      box-shadow:
-        -8px 0px 8px -6px ${theme.color.black20},
-        5px 0px 8px -6px ${theme.color.black20},
-        0px -5px 8px -6px ${theme.color.black20};
+      // box-shadow:
+      //   -8px 0px 8px -6px ${theme.color.black20},
+      //   5px 0px 8px -6px ${theme.color.black20},
+      //   0px -5px 8px -6px ${theme.color.black20};
 
       &:after {
         content: '';

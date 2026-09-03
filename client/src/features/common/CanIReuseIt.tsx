@@ -77,7 +77,7 @@ const CanIReuseIt: React.FC<IProps> = ({ entity, entityType }) => {
           </p>
         )}
         {carries.length === 0 && subjectTo.length === 0 && (
-          <p data-testid="under-certain-curcumstances">
+          <p className="ms-2 mb-0" data-testid="under-certain-curcumstances">
             Under Certain Circumstances
             <Tooltip html={reuse} placement="bottom">
               <i
@@ -94,7 +94,7 @@ const CanIReuseIt: React.FC<IProps> = ({ entity, entityType }) => {
             <TextNote content={cr.content} id="copyright-statement" />
           </Col>
         ))}
-      <Col xs={12}>
+      <Col xs={12} className="ms-2">
         <InternalLink
           uri="/content/rights-usage"
           name="FAQ: Rights & Usage Info"

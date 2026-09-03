@@ -76,7 +76,7 @@ const NamesContainer: React.FC<INames> = ({
             data-testid="names-container"
           >
             <TextLabel
-              className={textLabelWidth}
+              className={`${textValueWidth} mallory-bold`}
               label={nameLabel === '' ? 'Additional Names' : nameLabel}
             />
             <ExpandableList
@@ -87,7 +87,7 @@ const NamesContainer: React.FC<INames> = ({
               <TextValue
                 values={name(names[nameLabel])}
                 itemSpacing={showBreakline ? 'double' : 'single'}
-                className={textValueWidth}
+                className={`${textValueWidth} ms-2`}
               />
             </ExpandableList>
             <StyledHr

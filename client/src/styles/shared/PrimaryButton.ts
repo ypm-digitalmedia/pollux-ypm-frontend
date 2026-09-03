@@ -8,8 +8,8 @@ const PrimaryButton = styled(Button)`
   color: ${theme.color.white};
   border-radius: 0px;
   border-color: ${theme.color.primary.blue};
-  font-size: 0.9rem;
-  font-family: 'Mallory Medium', sans-serif;
+  font-size: 1rem;
+  font-family: 'Mallory Bold', sans-serif;
   font-weight: 500;
   padding: 0.75rem;
   text-decoration: none;
@@ -74,7 +74,6 @@ const PrimaryButton = styled(Button)`
     }
   }
 
-<<<<<<< HEAD
   &.objectsContainerSearchLink {
     background-color: ${theme.color.white};
     color: ${theme.color.primary.blue};
@@ -93,13 +92,6 @@ const PrimaryButton = styled(Button)`
     }
   }
 
-  &:hover {
-    background-color: ${theme.color.primary.darkBlue};
-    border-color: ${theme.color.primary.darkBlue};
-  }
-
-=======
->>>>>>> ea7e054ee0f0208cd836903e8f5734c3ed2a56d7
   &.addToCollectionOnEntityPageButton {
     background-color: ${theme.color.lightGray};
     color: ${theme.color.black};

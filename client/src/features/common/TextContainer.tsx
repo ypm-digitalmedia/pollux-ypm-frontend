@@ -21,7 +21,7 @@ const TextContainer: React.FC<IContainer> = ({
     className={`row ${additionalClassName}`}
     data-testid="text-container"
   >
-    <TextLabel label={label} className={textLabelClassName} />
+    <TextLabel label={label} className={`${textLabelClassName} mallory-bold`} />
     {children}
   </StyledDataRow>
 )

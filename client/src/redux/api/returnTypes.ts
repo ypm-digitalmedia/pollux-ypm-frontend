@@ -2,7 +2,7 @@ export interface ICmsPage {
   data: {
     attributes: {
       title: string
-      body: string
+      body: string | { value: string; format?: string }
     }
   }
 }

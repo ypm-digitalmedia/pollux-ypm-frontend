@@ -108,11 +108,12 @@ const TextNote: React.FC<ITextNote> = ({
       {!showLess && ' '}
       <button
         type="button"
-        className="btn btn-link"
+        className={`btn ${showLess ? 'btn-outline-primary' : 'btn-outline-secondary'} btn-sm rounded-0 ps-1 pe-1 pt-0 pb-0`}
         style={buttonStyle}
         onClick={() => setShowLess(!showLess)}
       >
-        <strong>[{linkName}]</strong>
+        {/* <strong>[{linkName}]</strong> */}
+        <i className={`bi me-1 ${showLess ? 'bi-chevron-down' : 'bi-chevron-up'}`} aria-hidden="true"></i>{linkName}
       </button>
     </React.Fragment>
   )
@@ -137,7 +138,8 @@ const TextNote: React.FC<ITextNote> = ({
           {shouldCollapse && button}
         </div>
       ) : (
-        <p className={contentClassName} style={{ whiteSpace: 'pre-line' }}>
+        <React.Fragment>
+        <p className={contentClassName} style={{ marginBottom: '2px', whiteSpace: 'pre-line' }}>
           <span
             ref={paragraphContentRef}
             style={showLess ? collapsedParagraphStyle : undefined}
@@ -147,8 +149,11 @@ const TextNote: React.FC<ITextNote> = ({
           {hasLanguage && (
             <LanguageSuperscript language={language} id={languageId} />
           )}
+        </p>
+        <p>
           {shouldCollapse && button}
         </p>
+        </React.Fragment>
       )}
     </div>
   )

@@ -47,13 +47,13 @@ const Identifier: React.FC<INames> = ({
       )}
       <TextLabel
         label={label === '' ? 'Additional Identifiers' : label}
-        className={labelWidth}
+        className={`${labelWidth} mallory-bold mb-3`}
       />
       <div className={contentWidth}>
         {identifiers.map((id: string) => (
           <dd
             key={id}
-            className={`mb-0 ${isMobile ? 'ms-3' : 'ms-0'}`}
+            className={`mb-0 ${isMobile ? 'ms-2' : 'ms-2'}`}
             data-testid={`identifier-value-${index}`}
           >
             {id}

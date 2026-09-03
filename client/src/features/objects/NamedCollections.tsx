@@ -39,7 +39,7 @@ const NamedCollections: React.FC<IApiText> = ({ entity }) => {
 
     return (
       <Row>
-        <TextLabel label="Named Collections" />
+        <TextLabel label="Named Collections" className="mallory-bold" />
         <ExpandableList>
           <TextValue values={formatRecordLinks(data)} className="col-md-9" />
         </ExpandableList>

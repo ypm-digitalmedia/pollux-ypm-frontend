@@ -64,7 +64,7 @@ const ExpandableList: React.FC<IList> = ({
         .map((value: string, ind: number) => (
           <div
             key={`${value}-${ind}`}
-            className={`${children.props.className || 'col-md-12 ms-3'} col-sm-12 ms-3`}
+            className={`${children.props.className || 'col-md-12 ms-2'} col-sm-12 ms-2`}
             style={rowStyle}
           >
             {value}
@@ -73,21 +73,22 @@ const ExpandableList: React.FC<IList> = ({
       {displayLength < numChildren && (
         <button
           type="button"
-          className={`btn btn-link show-more ps-0`}
+          className={`btn btn-sm btn-outline-primary show-more ps-1 pe-1 pt-0 pb-0 ms-2 rounded-0`}
           onClick={() => setDisplayLength(numChildren)}
           data-testid="expandable-list-show-all"
         >
-          Show All
+          <i className="bi bi-chevron-down me-1" aria-hidden="true"></i>Show all
         </button>
       )}
       {displayLength > length && (
         <button
           type="button"
-          className={`btn btn-link show-less ps-0 ${isMobile ? 'ps-0' : ''}`}
+          // className={`btn btn-link show-less ps-0 ${isMobile ? 'ps-0' : ''}`}
+          className={`btn btn-sm btn-outline-secondary show-more ps-1 pe-1 pt-0 pb-0 ms-2 rounded-0`}
           onClick={() => setDisplayLength(length)}
           data-testid="expandable-list-show-less"
         >
-          Show Less
+          <i className="bi bi-chevron-up me-1" aria-hidden="true"></i>Show less
         </button>
       )}
       {/* <StyledHr width="100%" $hiddenOnDesktop className={hrClassName} /> */}

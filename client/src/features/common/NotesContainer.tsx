@@ -59,7 +59,7 @@ const NotesContainer: React.FC<INotes> = ({
         return (
           <div className="row" key={noteLabel} data-testid={`${id}-${ind}`}>
             <TextLabel
-              className={textLabelWidth}
+              className={`${textValueWidth} mallory-bold`}
               label={noteLabel}
               showPopover={showPopover}
             />
@@ -70,7 +70,7 @@ const NotesContainer: React.FC<INotes> = ({
               <TextValue
                 values={formattedNotes}
                 className={
-                  formattedNotes.length > length ? 'col-md-12' : textValueWidth
+                  formattedNotes.length > length ? 'col-md-12 ms-2' : `${textValueWidth} ms-2`
                 }
               />
             </ExpandableList>

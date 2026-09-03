@@ -25,7 +25,7 @@ const WebPages: React.FC<{ webPages: Array<string> }> = ({ webPages }) => {
         <StyledDataRow className="row">
           <TextLabel className="col-md-12" />
           <ExpandableList
-            className="col-md-12"
+            className="col-md-12 ms-2"
             hrClassName="hideOnAboutSectionSidePanels"
           >
             <TextValue

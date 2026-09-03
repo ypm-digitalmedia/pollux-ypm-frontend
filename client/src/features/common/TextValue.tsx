@@ -32,7 +32,7 @@ const TextValue: React.FC<ITextValue> = ({
       data-testid="text-value"
     >
       {values.map((value: string | JSX.Element, ind: number) => (
-        <dd key={`${value}-${ind}`} data-testid="text-value-detail-description" className={isMobile ? 'ms-3' : 'ms-0'}>
+        <dd key={`${value}-${ind}`} data-testid="text-value-detail-description" className={isMobile ? 'ms-2' : 'ms-2'}>
           {value}
         </dd>
       ))}

@@ -67,10 +67,10 @@ const LinkContainer: React.FC<ILinkData> = ({
     return (
       <StyledDataRow className={`row ${rowClassName}`} id={id} data-testid={id}>
         {label !== undefined && (
-          <TextLabel label={label} className={textLabelWidth} />
+          <TextLabel label={label} className={`${textLabelWidth} mallory-bold`} />
         )}
         <ExpandableList
-          className={textValueWidth}
+          className={`${textValueWidth} ms-0`}
           length={expandableListLength}
           itemSpacing={itemSpacing}
           hrClassName={hrClassName}

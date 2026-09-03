@@ -33,6 +33,7 @@ export const unitCodeFromNumString = (s: string): UnitCode => {
 
 export type PageKey =
   | 'aboutLux'
+  | 'aboutLuxData'
   | 'accessToCollections'
   | 'collabHistory'
   | 'landAck'
@@ -48,6 +49,7 @@ export type PageKey =
 
 export const pagePaths = {
   aboutLux: 'node/page/502d21b5-2176-46b3-8990-bde1b681502f',
+  aboutLuxData: 'node/page/79e60557-d35f-4216-b594-33d64949ad56',
   accessToCollections: 'node/page/fd262a93-4f11-4140-9c2b-d4b0276d2065',
   collabHistory: 'node/page/58710c9b-5dbc-4266-9868-22edcff358be',
   landAck: 'node/page/5567909d-a297-4e9d-b396-f06ab33198fe',
@@ -85,6 +87,7 @@ export const overlays = {
 
 export const aboutPageRouteToKey: { [key: string]: PageKey } = {
   'about-lux': 'aboutLux',
+  'about-lux-data': 'aboutLuxData',
   'collaboration-history': 'collabHistory',
   technology: 'technology',
   'sharable-outcomes': 'sharableOutcomes',

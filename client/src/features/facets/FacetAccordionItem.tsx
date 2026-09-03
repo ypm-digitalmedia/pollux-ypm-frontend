@@ -81,6 +81,16 @@ const FacetAccordionItem: React.FC<IProps> = ({
     page,
   })
 
+  const facetButtonStyle = {
+    backgroundColor: theme.color.white,
+    color: theme.color.black,
+    fontWeight: 600,
+    fontSize: '1rem',
+    textAlign: 'left' as const,
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px'
+  }
+
   // get the facet state to determine the previously selected facet
   const facetsState = useAppSelector(
     (state) => state.facetSelection as IFacetsSelected,
@@ -139,7 +149,8 @@ const FacetAccordionItem: React.FC<IProps> = ({
                   `Facet ${facetLabels[facetName]}`,
                 )
               }}
-              className={`accordion-button ${isFacetOpen ? '' : 'collapsed'}`}
+              className={`facet accordion-button ${isFacetOpen ? '' : 'collapsed'}`}
+              style={facetButtonStyle}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={`#collapse-${index}`}

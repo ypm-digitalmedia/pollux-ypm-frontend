@@ -1,6 +1,10 @@
 import sanitizeHtml from 'sanitize-html'
 
 export const processHtml = (html: string): string => {
+  if (typeof html !== 'string') {
+    return ''
+  }
+
   const html2 = html.replaceAll(
     new RegExp('<a\\s.*?href="(.*?)".*?>(.*?)</a>', 'g'),
     (m0, m1, m2) => {

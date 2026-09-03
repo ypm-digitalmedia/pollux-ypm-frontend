@@ -40,7 +40,7 @@ const DataSources: React.FC<IProps> = ({ entity }) => {
   return (
     <div>
       <h2 data-testid="data-sources-header" className='panel-heading'>Data Sources</h2>
-      <div className="mb-2">
+      <div className="mb-2 ms-0">
         <p>
           This information has been automatically generated from the sources
           below, and may be inaccurate.{' '}
@@ -57,8 +57,8 @@ const DataSources: React.FC<IProps> = ({ entity }) => {
         if (dataSources[key].length > 0) {
           return (
             <StyledDataRow key={key} className="row mb-2">
-              <TextLabel label={key} className="col-12" />
-              <ExpandableList className="col-12" itemSpacing="single">
+              <TextLabel label={key} className="col-12 mallory-bold" />
+              <ExpandableList className="col-12 ms-2" itemSpacing="single">
                 <TextValue
                   values={formatExternalLinks(dataSources[key], key)}
                   className="col-12"

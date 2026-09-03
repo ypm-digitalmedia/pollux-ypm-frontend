@@ -12,7 +12,16 @@ export class ContentPageParser {
   }
 
   getBody(): string {
-    return this.data.data.attributes.body
+    const body = this.data.data.attributes.body
+    // Handle if body is an object with value property (Drupal text format)
+    if (typeof body === 'object' && body !== null && 'value' in body) {
+      return body.value
+    }
+    // Handle if body is already a string
+    if (typeof body === 'string') {
+      return body
+    }
+    return ''
   }
 }
 

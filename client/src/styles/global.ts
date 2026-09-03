@@ -257,7 +257,7 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(to bottom, ${theme.color.white} 0%, ${theme.color.offWhite} 100%);
   }
 
-  /* Bootstrap badge overrides */
+  /* Bootstrap overrides */
   .badge {
     font-family: 'Mallory Bold', sans-serif;
     padding: 0.35em 0.65em;
@@ -303,6 +303,40 @@ const GlobalStyle = createGlobalStyle`
 
   .badge-dark {
     background-color: ${theme.color.black};
+  }
+
+  // .btn-primary {
+  //   background-color: ${theme.color.primary.blue};
+  //   border-color: ${theme.color.primary.blue};
+  // }
+
+  // .btn-primary:hover,
+  // .btn-primary:focus,
+  // .btn-primary:active {
+  //   background-color: ${theme.color.primary.darkBlue};
+  //   border-color: ${theme.color.primary.darkBlue};
+  // }
+
+  .btn-outline-primary {
+    background-color: ${theme.color.white};
+    border-color: ${theme.color.primary.blue};
+    color: ${theme.color.primary.blue};
+  }
+
+  .btn-outline-primary:hover,
+  .btn-outline-primary:focus,
+  .btn-outline-primary:active {
+    background-color: ${theme.color.primary.blue};
+    border-color: ${theme.color.primary.blue};
+    color: ${theme.color.white};
+  }
+
+  .btn-outline-secondary:hover,
+  .btn-outline-secondary:focus,
+  .btn-outline-secondary:active {
+    background-color: ${theme.color.offWhite};
+    border-color: ${theme.color.gray};
+    color: ${theme.color.gray};
   }
 `
 

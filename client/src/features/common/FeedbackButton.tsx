@@ -37,7 +37,7 @@ const FeedbackButton: React.FC<IEntityPageBoolean> = ({ linkName }) => {
 
   // This should appear on entity pages
   return (
-    <div className="mt-1 mb-3">
+    <div className="mt-1 m-3">
       <PrimaryButton
         href={`${config.env.luxFeedbackUrl}${currentURL}`}
         type="button"
